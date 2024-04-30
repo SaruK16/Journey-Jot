@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Jot - Attractions</title>
+    <style>
+        body {
+            font-family: roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .header ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .header ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .header ul li a:hover {
+            color: #ffc107;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        #attractions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .attraction-item {
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        .attraction-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .attraction-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .item-details {
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        .item-details h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .item-details p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #666;
+        }
+		
+		 #sorting {
+            padding: 10px 15px;
+            font-size: 16px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            background-color: white;
+            transition: border-color 0.3s ease;
+			color:black;
+			
+        }
+
+        #sorting:hover {
+            border-color: #ffc107;
+        }
+		
+		.h3{
+			align:center;
+		}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="events.html">Special Festivals</a></li>
+           
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Select Places for Your Trip</h2>
+        <div class="sorting-options" >
+            <select id="sorting">
+                <option value="all" selected >All</option>
+                <option value="historical">Historical</option>
+                <option value="educational">Educational</option>
+                <option value="natural">Natural</option>
+                <option value="shopping">Shopping</option>
+                <option value="fun">Fun</option>
+                <option value="architectural">Architectural</option>
+                <option value="religious">Religious</option><br><br>
+            </select>
+        </div>
+        <div id="attractions">
+            <div class="attraction-item historical">
+                <a href="Colombo National Museum.html">
+                    <img src="museum.jpg" alt="Colombo National Museum">
+                    <div class="item-details">
+                        <h3>Colombo National Museum</h3>
+                       
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item historical">
+                <a href="Independence Square.html">
+                    <img src="independence_memorial.jpg" alt="Independence Memorial Hall">
+                    <div class="item-details">
+                        <h3>Independence Memorial Hall</h3>
+                       
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item historical">
+                <a href="Old parliament.html">
+                    <img src="Old_Parliament_Building_Colombo.jpg" alt="Old Parliament">
+                    <div class="item-details">
+                        <h3>Old Parliament</h3>
+                        
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item educational">
+                <a href="planetarium.html">
+                    <img src="planetarium.jpg" alt="Planetarium">
+                    <div class="item-details">
+                        <h3>Planetarium</h3>
+                        
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item educational">
+                <a href="World Trade Center.html">
+                    <img src="world_trade_center.jpg" alt="World Trade Center">
+                    <div class="item-details">
+                        <h3>World Trade Center</h3>
+                      
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item natural">
+                <a href="BeddaganaWetlandPark.html">
+                    <img src="wetland_park.jpg" alt="Beddaganna Wetland Park">
+                    <div class="item-details">
+                        <h3>Beddaganna Wetland Park</h3>
+                       
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item natural">
+                <a href="mount_lavinia_beach.html">
+                    <img src="mount_lavinia_beach.jpg" alt="Mount Lavina Beach">
+                    <div class="item-details">
+                        <h3>Mount Lavina Beach</h3>
+                      
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item natural">
+                <a href="Zoo.html">
+                    <img src="Dehiwala_Zoo_Museum.jpg" alt="Dehiwala Zoo Museum">
+                    <div class="item-details">
+                        <h3>Dehiwala Zoo Museum</h3>
+                      
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item natural">
+                <a href="Galle Face Green.html">
+                    <img src="Galle_Face_Green.jpg" alt="Galle Face Green">
+                    <div class="item-details">
+                        <h3>Galle Face Green</h3>
+                      
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item natural">
+                <a href="Wiharamahadevi.html">
+                    <img src="Vihara_Mahadevi_Park.jpg" alt="Vihara Mahadevi Park">
+                    <div class="item-details">
+                        <h3>Vihara Mahadevi Park</h3>
+                      
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item natural">
+                <a href="Wellawatte Beach.html">
+                    <img src="Wellawatta_Beach.jpg" alt="Wellawatta Beach">
+                    <div class="item-details">
+                        <h3>Wellawatta Beach</h3>
+                       
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item shopping">
+                <a href="Pettah market.html">
+                    <img src="Pettah_Market.jpg" alt="Pettah Market">
+                    <div class="item-details">
+                        <h3>Pettah Market</h3>
+                       
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item shopping">
+                <a href="Onegalleface.html">
+                    <img src="one_galle_face_mall.jpg" alt="One Galle Face Mall">
+                    <div class="item-details">
+                        <h3>One Galle Face Mall</h3>
+                       
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item shopping">
+                <a href="public fair maharagama.html">
+                    <img src="Maharagama_Market.jpg" alt="Maharagama Market">
+                    <div class="item-details">
+                        <h3>Maharagama Market</h3>
+                      
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item shopping">
+                <a href="Colombo city centre.html">
+                    <img src="Colombo_City_Center.jpg" alt="Colombo City Center">
+                    <div class="item-details">
+                        <h3>Colombo City Center</h3>
+                      
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item shopping">
+                <a href="floating market.html">
+                    <img src="Floating_Market.jpg" alt="Floating Market">
+                    <div class="item-details">
+                        <h3>Floating Market</h3>
+                        
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item shopping">
+                <a href="Havelock mall.html">
+                    <img src="Havelock_City_Mall.jpg" alt="Havelock City Mall">
+                    <div class="item-details">
+                        <h3>Havelock City Mall</h3>
+                       
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item fun">
+                <a href="Water World Kelaniya.html">
+                    <img src="Water_World_Kelaniya.jpg" alt="Water World Kelaniya">
+                    <div class="item-details">
+                        <h3>Water World Kelaniya</h3>
+                      
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item fun">
+                <a href="leisureworld.html">
+                    <img src="Leisure_World.jpg" alt="Leisure World">
+                    <div class="item-details">
+                        <h3>Leisure World</h3>
+                       
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item fun">
+                <a href="lalapark.html">
+                    <img src="LaLa_Park.jpg" alt="LaLa Park">
+                    <div class="item-details">
+                        <h3>LaLa Park</h3>
+                       
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item fun">
+                <a href="pearlbay.html">
+                    <img src="Pearl_Bay.jpg" alt="Pearl Bay">
+                    <div class="item-details">
+                        <h3>Pearl Bay</h3>
+                       
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item fun">
+                <a href="Aluthkade.html">
+                    <img src="Aluthkade.jpg" alt="Aluthkade">
+                    <div class="item-details">
+                        <h3>Aluthkade</h3>
+                      
+                    </div>
+                </a>
+            </div>
+           
+            <div class="attraction-item architectural">
+                <a href="lotus tower.html">
+                    <img src="Lotus_Tower.jpg" alt="Lotus Tower">
+                    <div class="item-details">
+                        <h3>Lotus Tower</h3>
+                       
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item architectural">
+                <a href="Port city.html">
+                    <img src="Port_City.jpg" alt="Port City">
+                    <div class="item-details">
+                        <h3>Port City</h3>
+                       
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item architectural">
+                <a href="BMICH.html">
+                    <img src="BMICH.jpg" alt="BMICH">
+                    <div class="item-details">
+                        <h3>BMICH</h3>
+                       
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item architectural">
+                <a href="Nelum Pokuna Theatre.html">
+                    <img src="Nelum_Pokuna_Mahinda_Rajapaksa_Theatre.jpg" alt="Nelum Pokuna Mahinda Rajapaksa Theatre">
+                    <div class="item-details">
+                        <h3>Nelum Pokuna Mahinda Rajapaksa Theatre</h3>
+                      
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item religious">
+                <a href="Gangaramaya Temple.html">
+                    <img src="Gangaramaya_Temple.jpg" alt="Gangaramaya Temple">
+                    <div class="item-details">
+                        <h3>Gangaramaya Temple</h3>
+                        
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item religious">
+                <a href="Red mosque.html">
+                    <img src="Red_Mosque.jpg" alt="Red Mosque">
+                    <div class="item-details">
+                        <h3>Red Mosque</h3>
+                       
+                    </div>
+                </a>
+            </div>
+            <div class="attraction-item religious">
+                <a href="Kochikade.html">
+                    <img src="Kochikade4.jpg" alt="St.Anthony’s Church Kochikade">
+                    <div class="item-details">
+                        <h3>St.Anthony’s Church Kochikade</h3>
+                      
+                    </div>
+                </a>
+            </div>
+			 <div class="attraction-item natural">
+                <a href="Bellanwila park.html">
+                    <img src="BellanwilaPark5.jpg" alt="bellanwila park">
+                    <div class="item-details">
+                        <h3>Bellanwila Park</h3>
+                      
+                    </div>
+                </a>
+            </div>
+			 <div class="attraction-item natural">
+                <a href="Diyathauyana.html">
+                    <img src="DiyathaUyana1.jpg" alt="Diyatha uyana">
+                    <div class="item-details">
+                        <h3>Diyatha uyana</h3>
+                      
+                    </div>
+                </a>
+            </div>
+			
+        </div>
+    </div>
+
+    <script>
+        // Get all attraction items
+        var attractions = document.querySelectorAll('.attraction-item');
+
+        // Add event listener to the sorting select element
+        document.getElementById('sorting').addEventListener('change', function () {
+            var selectedCategory = this.value;
+
+            // Loop through all attractions
+            attractions.forEach(function (attraction) {
+                // Check if the selected category is 'all' or the attraction belongs to the selected category
+                if (selectedCategory === 'all' || attraction.classList.contains(selectedCategory)) {
+                    attraction.style.display = 'block'; // Show attraction
+                } else {
+                    attraction.style.display = 'none'; // Hide attraction
+                }
+            });
+        });
+    </script>
+</body>
+</html>

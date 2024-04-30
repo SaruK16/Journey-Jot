@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Lankan Festivals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+        }
+		
+		 .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .header ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .header ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .header ul li a:hover {
+            color: #ffc107;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+		
+		.hero{
+			background-image: url('sri_lanka.jpg');
+		          
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 200px 0;
+            text-align: center;
+		}
+        h1 {
+            text-align: center;
+            color: black;
+			font-size:72px;
+			font-weight:bold;
+			
+        }
+        .festivals {
+            margin-top: 20px;
+        }
+        .festival {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .festival h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .festival img {
+            display: block;
+            margin: 0 auto 15px;
+            max-width: 80%;
+            border-radius: 10px;
+        }
+        .festival p {
+            color: #666;
+        }
+        .sort {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        select {
+            padding: 8px 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="header">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="events.html">Special Festivals</a></li>
+       
+    </ul>
+</div>
+    <div class="hero">
+       
+    <h1>Sri Lankan Festivals</h1>
+	</div>
+	<div class="container">
+    <div class="sort">
+        <label for="sort">Sort by month:</label>
+        <select id="sort">
+            <option value="default">Default</option>
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+    </div>
+    <div class="festivals" id="festivals">
+        <div class="festival" data-month="january">
+            <h2>January - Thai Pongal</h2>
+            <img src="thai_pongal.jpg" alt="Thai Pongal">
+            <p>Thai Pongal is a harvest festival celebrated by Tamil people in Sri Lanka. It is dedicated to the Sun God and marks the beginning of the Tamil month of Thai.</p>
+        </div>
+        <div class="festival" data-month="february">
+            <h2>February - Navam Perahera</h2>
+            <img src="navam_perahera.jpg" alt="Navam Perahera">
+            <p>Navam Perahera is an annual procession held in Colombo, Sri Lanka, to honor the sacred relics of the Buddha. It features traditional dancers, drummers, and beautifully adorned elephants.</p>
+        </div>
+        <div class="festival" data-month="march">
+            <h2>March - Ramadan</h2>
+            <img src="Ramadan.jpg" alt="Ramadan">
+            <p>Ramadan isn't actually a festival itself, but a holy month observed by Muslims worldwide. It's a time of spiritual reflection, fasting from dawn to dusk, and increased prayer and devotion. Muslims aim to become closer to God and develop self-discipline through fasting. Ramadan concludes with Eid al-Fitr, a joyous occasion to celebrate the breaking of the fast and mark the end of the holy month</p>
+        </div>
+        <div class="festival" data-month="april">
+            <h2>April - Sinhala and Tamil New Year</h2>
+            <img src="sinhala_tamil_new_year.jpg" alt="Sinhala and Tamil New Year">
+            <p>Sinhala and Tamil New Year, also known as Aluth Avurudda in Sinhala and Puthandu in Tamil, is a cultural festival celebrated by Sinhalese and Tamil people in Sri Lanka. It marks the beginning of the new year and is a time for family gatherings and traditional customs.</p>
+        </div>
+        <div class="festival" data-month="may">
+            <h2>May - Vesak</h2>
+            <img src="vesak.jpg" alt="Vesak">
+            <p>Vesak, also known as Buddha Jayanti, is the most important Buddhist festival in Sri Lanka. It commemorates the birth, enlightenment, and death of the Buddha. Temples are decorated with colorful lanterns, and devotees engage in acts of charity.</p>
+        </div>
+        <div class="festival" data-month="june">
+            <h2>June - Poson Full Moon Poya</h2>
+            <img src="poson_poya.jpg" alt="Poson Full Moon Poya">
+            <p>Poson Full Moon Poya commemorates the introduction of Buddhism to Sri Lanka by Arahat Mahinda, the son of Emperor Ashoka of India. It is celebrated with religious observances and pilgrimages to important Buddhist sites.</p>
+        </div>
+        <div class="festival" data-month="july">
+            <h2>July - Esala Perahera</h2>
+            <img src="esala_perahera.jpg" alt="Esala Perahera">
+            <p>Esala Perahera is a grand festival held in Kandy, Sri Lanka, to honor the sacred tooth relic of the Buddha. It features colorful processions with traditional dancers, drummers, and elaborately decorated elephants.</p>
+        </div>
+        <div class="festival" data-month="august">
+            <h2>August - Nikini Full Moon Poya</h2>
+            <img src="nikini_poya.jpg" alt="Nikini Full Moon Poya">
+            <p>Nikini Full Moon Poya commemorates the first Buddhist council held after the Buddha's passing away. It is a time for Buddhist observances and reflection on the teachings of the Buddha.</p>
+        </div>
+        <div class="festival" data-month="september">
+            <h2>September - Binara Full Moon Poya</h2>
+            <img src="binara_poya.jpg" alt="Binara Full Moon Poya">
+            <p>Binara Full Moon Poya commemorates the visit of the Buddha to heaven to preach to his mother who had been reborn there. It is a time for Buddhist devotions and acts of merit-making.</p>
+        </div>
+        <div class="festival" data-month="october">
+            <h2>October - Vap Full Moon Poya</h2>
+            <img src="vap_poya.jpg" alt="Vap Full Moon Poya">
+            <p>Vap Full Moon Poya commemorates the end of the three months rainy retreat period (Vas) observed by Buddhist monks. It is a time for renewing vows and intensifying spiritual practice.</p>
+        </div>
+        <div class="festival" data-month="november">
+            <h2>November - Deepavali (Diwali)</h2>
+            <img src="deepavali.jpg" alt="Deepavali (Diwali)">
+            <p>Deepavali, also known as Diwali, is the festival of lights celebrated by Hindus in Sri Lanka. It symbolizes the victory of light over darkness and good over evil. Homes and temples are decorated with oil lamps, and fireworks are lit to mark the occasion.</p>
+        </div>
+        <div class="festival" data-month="december">
+            <h2>December - Christmas</h2>
+            <img src="christmas.jpg" alt="Christmas">
+            <p>Christmas is celebrated by Christians in Sri Lanka to commemorate the birth of Jesus Christ. It is a time for religious observances, gift-giving, and festive gatherings with family and friends.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('sort').addEventListener('change', function() {
+        const month = this.value;
+        const festivals = document.querySelectorAll('.festival');
+        festivals.forEach(festival => {
+            if (month === 'default' || festival.getAttribute('data-month') === month) {
+                festival.style.display = 'block';
+            } else {
+                festival.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
