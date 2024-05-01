@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gangaramaya Temple</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .header ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .header ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .header ul li a:hover {
+            color: #ffc107;
+        }
+
+        .hero {
+            background-image: url('Gangaramaya_Temple6.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 200px 0;
+            text-align: center;
+        }
+        
+        h1  {
+            color: White;
+            font-size : 60px;
+            
+        }
+        
+        h2{
+            color : white;
+            text-align:left;
+        }
+        
+        p {
+            color: #666;
+        }
+        .description {
+            margin-bottom: 20px;
+        }
+        .map {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .details {
+            margin-top: 50px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #333;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .details h2 {
+            margin-top: 0;
+            color: #333;
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+            background-color:green;
+        }
+        .details p {
+            line-height: 1.6;
+        }
+        .details ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .details ul li {
+            margin-bottom: 10px;
+            color: #666;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .images img {
+            width: 300px;
+            height:150px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            margin: 20px auto;
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 16px;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .small-btn {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .small-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="events.html">Special Festivals</a></li>
+       
+    </ul>
+</div>
+<div class="hero">
+    <h1>Gangaramaya Temple</h1>
+    <p style="color:white;">Explore the attractions of Colombo, Srilanka  with us - Journey Jot</p>
+    <a href="#details" class="btn">Learn More</a>
+</div>
+<div class="container">
+    <div id="details" class="details">
+        <div style="background-color: #fff; border-radius: 10px; padding: 20px; margin:20px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);">
+            <h2 style="color:white;">About</h2>
+            <p>Historic Buddhist temple with a robust collection of artifacts & statues, plus vocational training</p>
+        </div>
+        <div class="images" style="background-color: #fff; border-radius: 10px; padding: 20px; margin:20px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);">
+            <img src="Gangaramaya_Temple1.jpg" alt="Gangaramaya_Temple 1">
+            <img src="Gangaramaya_Temple2.jpg" alt="Gangaramaya_Temple 2">
+            <img src="Gangaramaya_Temple3.jpg" alt="Gangaramaya_Temple 3">
+            <img src="Gangaramaya_Temple.jpg" alt="Gangaramaya_Temple 4">
+            <img src="Gangaramaya_Temple5.jpg" alt="Gangaramaya_Temple 5">
+        </div>
+        
+        
+        
+        <div style="background-color: #fff; border-radius: 10px; padding: 20px;margin:20px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);">
+            <h2 style="color:white;">Nearby Transport Facilities</h2>
+            <p>Public transport, Uber, PickMe</p>
+        </div>
+        <div id="map" style="background-color: #fff; border-radius: 10px; padding: 20px; margin:20px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);">
+            <h2 style="color:white;">Location</h2>
+            <div class="map">
+                <iframe id="mapFrame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.0250179054955!2d79.85660801384995!3d6.916742224681375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bd57b2e0b8b%3A0x804a8d4aa9ba2c2f!2sSri%20Lanka%20Planetarium!5e0!3m2!1sen!2sin!4v1651765786601!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <button class="small-btn" onclick="showGangaramayaTemple()">Show Gangaramaya Temple</button>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+<script>
+    function showOnMap(latitude, longitude) {
+        var mapFrame = document.getElementById('mapFrame');
+        if (mapFrame) {
+            mapFrame.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.0250179054955!2d" + longitude + "!3d" + latitude + "!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bd57b2e0b8b%3A0x804a8d4aa9ba2c2f!2sSri%20Lanka%20Planetarium!5e0!3m2!1sen!2sin!4v1651765786601!5m2!1sen!2sin";
+        }
+    }
+
+    function showGangaramayaTemple() {
+        var mapFrame = document.getElementById('mapFrame');
+        if (mapFrame) {
+            mapFrame.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.0250179054955!2d79.85660801384995!3d6.916742224681375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bd57b2e0b8b%3A0x804a8d4aa9ba2c2f!2sSri%20Lanka%20Planetarium!5e0!3m2!1sen!2sin!4v1651765786601!5m2!1sen!2sin";
+
+        }
+    }
+</script>
+
+</body>
+</html>
